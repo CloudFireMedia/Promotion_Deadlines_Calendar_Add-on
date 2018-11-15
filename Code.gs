@@ -1,5 +1,5 @@
 var SCRIPT_NAME = 'Promotion Deadlines Calendar';
-var SCRIPT_VERSION = 'v1.3.dev_ajr';
+var SCRIPT_VERSION = 'v1.4';
 
 function onInstall() {
   setupAutomation()
