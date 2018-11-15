@@ -1,16 +1,21 @@
 var SCRIPT_NAME = 'Promotion Deadlines Calendar';
-var SCRIPT_VERSION = 'v1.3';
+var SCRIPT_VERSION = 'v1.4';
+
+function onInstall() {
+  setupAutomation()
+  onOpen()
+}
 
 function onOpen(){ 
 
   var ui = SpreadsheetApp.getUi();
 
   ui.createMenu("CloudFire")
-    .addItem("Format Sheet", "formatSheet")
-    .addSeparator()
-    .addItem('Restore Header', 'restoreHeader')
-    .addItem('Backup Header', 'backupHeader')
-    .addSeparator()
+//    .addItem("Format Sheet", "formatSheet") // TODO - trello.com/c/zBmW3avV
+//    .addSeparator()
+//    .addItem('Restore Header', 'restoreHeader') // TODO - trello.com/c/nAKilYOB
+//    .addItem('Backup Header', 'backupHeader') // TODO - trello.com/c/nAKilYOB
+//    .addSeparator()
     .addItem('Enable Automation', 'setupAutomation') 
     .addItem('Disable Automation', 'disableAutomation') 
     .addSeparator()
